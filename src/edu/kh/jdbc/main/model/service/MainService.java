@@ -1,0 +1,29 @@
+package edu.kh.jdbc.main.model.service;
+
+import static edu.kh.jdbc.common.JDBCTemplate.*;
+
+import java.sql.Connection;
+
+import edu.kh.jdbc.common.JDBCTemplate;
+import edu.kh.jdbc.main.model.dao.MainDAO;
+import edu.kh.jdbc.member.model.dto.Member;
+
+public class MainService {
+
+	private MainDAO dao = new MainDAO();
+	
+	
+	/** 로그인 서비스
+	 * @param memberId
+	 * @param memberPw
+	 * @return
+	 */
+	public Member login(String memberId, String memberPw) {
+	
+		//1. Connection 생성
+		Connection conn = JDBCTemplate.getConnection();
+		
+		return null;
+	}
+
+}
